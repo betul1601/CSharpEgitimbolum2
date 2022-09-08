@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsAppAdonet
+namespace WindowsFormsAppEntityFrameWorkCodeFirst
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace WindowsFormsAppAdonet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Kategoriler());
+            Application.Run(new Form1());
         }
     }
 }

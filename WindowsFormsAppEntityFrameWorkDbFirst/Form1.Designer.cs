@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsAppAdonet
+﻿namespace WindowsFormsAppEntityFrameWorkDbFirst
 {
-    partial class Form1
+    partial class Centerscreen
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,8 @@
         {
             this.dgvUrunler = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnsil = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnekle = new System.Windows.Forms.Button();
             this.txtStokMiktari = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,8 +39,6 @@
             this.txtUrunAdi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnGuncelle = new System.Windows.Forms.Button();
-            this.btnsil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -46,12 +46,12 @@
             // dgvUrunler
             // 
             this.dgvUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUrunler.Location = new System.Drawing.Point(0, 0);
+            this.dgvUrunler.Location = new System.Drawing.Point(0, 4);
             this.dgvUrunler.Name = "dgvUrunler";
             this.dgvUrunler.RowHeadersWidth = 62;
             this.dgvUrunler.RowTemplate.Height = 28;
-            this.dgvUrunler.Size = new System.Drawing.Size(592, 592);
-            this.dgvUrunler.TabIndex = 0;
+            this.dgvUrunler.Size = new System.Drawing.Size(420, 446);
+            this.dgvUrunler.TabIndex = 1;
             this.dgvUrunler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUrunler_CellClick);
             // 
             // groupBox1
@@ -65,13 +65,34 @@
             this.groupBox1.Controls.Add(this.txtUrunAdi);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(660, 0);
+            this.groupBox1.Location = new System.Drawing.Point(436, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(322, 329);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.Size = new System.Drawing.Size(322, 373);
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ürün Bilgileri";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btnsil
+            // 
+            this.btnsil.Enabled = false;
+            this.btnsil.Location = new System.Drawing.Point(235, 271);
+            this.btnsil.Name = "btnsil";
+            this.btnsil.Size = new System.Drawing.Size(81, 34);
+            this.btnsil.TabIndex = 8;
+            this.btnsil.Text = "Sil";
+            this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
+            // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Enabled = false;
+            this.btnGuncelle.Location = new System.Drawing.Point(108, 271);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(121, 34);
+            this.btnGuncelle.TabIndex = 7;
+            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnekle
             // 
@@ -131,36 +152,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ürün Adı";
             // 
-            // btnGuncelle
-            // 
-            this.btnGuncelle.Enabled = false;
-            this.btnGuncelle.Location = new System.Drawing.Point(108, 271);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(121, 34);
-            this.btnGuncelle.TabIndex = 7;
-            this.btnGuncelle.Text = "Güncelle";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
-            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
-            // 
-            // btnsil
-            // 
-            this.btnsil.Enabled = false;
-            this.btnsil.Location = new System.Drawing.Point(235, 271);
-            this.btnsil.Name = "btnsil";
-            this.btnsil.Size = new System.Drawing.Size(81, 34);
-            this.btnsil.TabIndex = 8;
-            this.btnsil.Text = "Sil";
-            this.btnsil.UseVisualStyleBackColor = true;
-            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
-            // 
-            // Form1
+            // Centerscreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1044, 604);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvUrunler);
-            this.Name = "Form1";
+            this.Name = "Centerscreen";
             this.Text = "Ürün Yönetimi";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).EndInit();
@@ -174,6 +173,8 @@
 
         private System.Windows.Forms.DataGridView dgvUrunler;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnsil;
+        private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnekle;
         private System.Windows.Forms.TextBox txtStokMiktari;
         private System.Windows.Forms.Label label3;
@@ -181,8 +182,6 @@
         private System.Windows.Forms.TextBox txtUrunAdi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnGuncelle;
-        private System.Windows.Forms.Button btnsil;
     }
 }
 

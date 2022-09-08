@@ -76,5 +76,51 @@ namespace WindowsFormsAppAdonet
             connection.Close();//veritabanı nesnesini kapa
             return islemSonucu; // metodumuz geriye int döndüğü için işlem sonucu değişkenini geri dönüyoruz
         }
+
+        public product GetProduct(string id)
+        {
+            ConnectionKontrol();
+            SqlCommand command=new SqlCommand("select* from Products where Id=" +id,connection);
+            SqlDataReader reader=command.ExecuteReader();   
+            product product=new product();  
+
+            while(reader.Read())
+            {
+                product.Id=Convert.ToInt32(reader["Id"]);
+                product.UrunFiyati = Convert.ToDecimal(reader["UrunFiyati"]);
+                product.StokMiktari = Convert.ToInt32(reader["StokMiktari"]);
+                product.UrunAdi = reader["UrunAdi"].ToString(); 
+
+            }
+            reader.Close();//veri okuyucuyu kapat
+            command.Dispose();//sql komut nesensini kapat
+            connection.Close();//veri tabanı bağlantısıın kapat
+            return product; 
+        }
+
+        public int Update (product product)
+        {
+            ConnectionKontrol();
+            SqlCommand command = new SqlCommand("Update  Products set UrunAdi= @UrunAdi ,UrunFiyati=@UrunFiyati,StokMiktari=@Stok where Id=@UrunId ", connection);  //sql komutu olarak bu sefer insert komutu yaazdık
+            command.Parameters.AddWithValue("@UrunAdi", product.UrunAdi);
+            command.Parameters.AddWithValue("@UrunFiyati", product.UrunFiyati);
+            command.Parameters.AddWithValue("@Stok", product.StokMiktari);
+            command.Parameters.AddWithValue("@UrunId", product.Id);
+            int islemSonucu = command.ExecuteNonQuery();//executenonquery metodu geriye veritabanında etkilenen kayıt sayısını döner  
+            command.Dispose();//sql komut nesnesini kapa
+            connection.Close();//veritabanı nesnesini kapa
+            return islemSonucu; // metodumuz geriye int döndüğü için işlem sonucu değişkenini geri dönüyoruz
+        }
+
+        public int Delete (string id)
+        {
+            ConnectionKontrol();
+            SqlCommand command = new SqlCommand("Delete from products where Id= @UrunId", connection);
+            command.Parameters.AddWithValue("@UrunId",id);
+            int islemSonucu = command.ExecuteNonQuery();
+            command.Dispose();
+            connection.Close();
+            return islemSonucu; 
+        }
     }
 }

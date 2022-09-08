@@ -5,6 +5,10 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppAdonet", "WindowsFormsAppAdonet\WindowsFormsAppAdonet.csproj", "{A09C9E1C-1C5A-48F1-A767-1B095336F277}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppEntityFrameWorkDbFirst", "WindowsFormsAppEntityFrameWorkDbFirst\WindowsFormsAppEntityFrameWorkDbFirst.csproj", "{B5AB3B3E-EE46-47B5-A9BF-B3FD93E0FC84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppEntityFrameWorkCodeFirst", "WindowsFormsAppEntityFrameWorkCodeFirst\WindowsFormsAppEntityFrameWorkCodeFirst.csproj", "{B7D32274-E1C4-45C3-AC7D-6696897B0270}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A09C9E1C-1C5A-48F1-A767-1B095336F277}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A09C9E1C-1C5A-48F1-A767-1B095336F277}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A09C9E1C-1C5A-48F1-A767-1B095336F277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5AB3B3E-EE46-47B5-A9BF-B3FD93E0FC84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5AB3B3E-EE46-47B5-A9BF-B3FD93E0FC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5AB3B3E-EE46-47B5-A9BF-B3FD93E0FC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5AB3B3E-EE46-47B5-A9BF-B3FD93E0FC84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D32274-E1C4-45C3-AC7D-6696897B0270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D32274-E1C4-45C3-AC7D-6696897B0270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D32274-E1C4-45C3-AC7D-6696897B0270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D32274-E1C4-45C3-AC7D-6696897B0270}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
