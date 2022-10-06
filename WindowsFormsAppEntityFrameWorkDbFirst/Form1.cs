@@ -122,5 +122,10 @@ namespace WindowsFormsAppEntityFrameWorkDbFirst
                 MessageBox.Show("hata oluştu"+ hata.Message);
             }
         }
+
+        private void dgvUrunler_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

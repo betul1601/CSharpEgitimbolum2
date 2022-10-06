@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace WindowsFormsAppEntityFrameWorkCodeFirst.Entities
 {
     [Table("Urunler")] //veritabanı tablosunun ismi urunler olsun uruns olmasın
-    public class urun
+    public class Urun
     {
         public int Id { get; set; }
         public decimal UrunFiyati { get; set; }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace WindowsFormsAppEntityFrameWorkCodeFirst.Entities
 {
     [Table("Kategoriler")] // bu attribute entity framework ün veritabanı tablosunu categories ismi yerine kategoriler ollarak oluşturmayı sağlar
-  public class kategori
+  public class Kategori
     {
         public int Id { get; set; }
         public string Adi { get; set; }

@@ -46,7 +46,7 @@
             // dgvUrunler
             // 
             this.dgvUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUrunler.Location = new System.Drawing.Point(12, 1);
+            this.dgvUrunler.Location = new System.Drawing.Point(12, 12);
             this.dgvUrunler.Name = "dgvUrunler";
             this.dgvUrunler.RowHeadersWidth = 62;
             this.dgvUrunler.RowTemplate.Height = 28;
@@ -64,7 +64,7 @@
             this.groupBox1.Controls.Add(this.txtUrunAdi);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(450, 12);
+            this.groupBox1.Location = new System.Drawing.Point(487, 55);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(322, 373);
             this.groupBox1.TabIndex = 3;
@@ -99,7 +99,7 @@
             this.btnekle.TabIndex = 6;
             this.btnekle.Text = "Ekle";
             this.btnekle.UseVisualStyleBackColor = true;
-            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
+            this.btnekle.Click += new System.EventHandler(this.btnekle_Click_1);
             // 
             // txtStokMiktari
             // 
@@ -151,21 +151,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(958, 488);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvUrunler);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
+
 
         #endregion
 

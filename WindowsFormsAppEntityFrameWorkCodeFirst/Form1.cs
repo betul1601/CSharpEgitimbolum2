@@ -26,28 +26,30 @@ namespace WindowsFormsAppEntityFrameWorkCodeFirst
 
         private void btnekle_Click(object sender, EventArgs e)
         {
-            try
-            {
-                context.urunler.Add(
-                    new urun
-                    {
-                       UrunAdi=txtUrunAdi.Text, 
-                       UrunFiyati=Convert.ToDecimal(txtUrunFiyati.Text),
-                       StokMiktari=Convert.ToInt32(txtStokMiktari.Text)
-                       
-                    }
-                    );
-                var sonuc =context.SaveChanges();
-                if (sonuc>0)
-                {
-                    dgvUrunler.DataSource=context.urunler.ToList();
-                    MessageBox.Show("kayıt başarılı");
-                }
-            }
-            catch (Exception hata)
-            {
-                MessageBox.Show("hata oluştu" +hata.Message);
-            }
+
+        }
+        private void dgvUrunler_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnekle_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

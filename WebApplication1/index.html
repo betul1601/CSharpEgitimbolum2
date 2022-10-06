@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Anasayfa</title>
+</head>
+<body>
+    Anasayfa
+    <br />
+    html elementleri
+    <h1> h1 en büyüük sayfa başlık elementidir</h1>
+    <h2>h2 elementi sayfada alt başlık oluşturmak için kullanılır</h2>
+    <h3>h3 h2 nin alt başlığıdır</h3>
+    <h4>h4 biraz daha küçük başlık için kullanılır</h4>
+    <h5>h5 elementi en küçükten bir büyüktür</h5>
+    <h6>h6 en son ve en küçük başlık elementidir</h6>
+
+    <p>p elementi paaragraf elementidir yazının paragraf olduğunu belirtir</p>
+    <div> div elementi sayfada bölümler oluşturmak için kullanılır</div>
+    <hr />
+    <div>
+        hr elementi sayfada yatay çizgi çekilmesini sağlar
+        <br />
+        br elementi ise satırdaki kendinden sonraki yazıyı alt satırdan devam ettirir
+    </div>
+
+    <h3> a elementi ile sayfada link oluşturma</h3>
+    <a href=" #"> a elementi ile link oluşturmak için href in içine yazmalıyız </a>
+    <hr />
+    <a href="https://www.google.com.tr/?hl=tr"> googlea a git  </a>
+    <br />
+    <a href="https://www.google.com.tr/?hl=tr" target="_blank"> googleı yeni sekmede aç  </a>
+    <h3> sayfada resim gösterme</h3>
+    <p>
+        sayfada resim göstemrmek için img elementi kullanıkrı
+        <br />
+        src kısmındaki tırnakların arasına resmin yolu ve adı uzantısıyla beraber yazılır
+    </p>
+    <img src="/Images/bird.png" alt="alternate text " height="300" />
+    <p>
+        resimlerde yükseklik için height gemişlik için width kodu ile boyutlandrıama yapabilirzi
+
+
+    </p>
+    <hr />
+
+    <p>
+        table elementi ile ekranda excel tarzında veri gösterimi yapabilirzi
+    </p>
+
+    <table>
+        <tr>
+            <td>  bu yazı 1 satır(tr) ve 1 sütun(td) dan oluşan table elementi içindedir   </td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td> table elemnentinde çerçeve kullanmak için border kodu kullanabiliriz   </td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td> satırdaki sol kolon için   </td>
+            <td>  satırdaki sağ kolon için   </td>
+            <td>3. kolon</td>
+            <td>4. kolon</td>
+            <td>5. kolon</td>
+        </tr>
+    </table>
+    <hr />
+    <table border="1">
+        <tr>
+            <td> satırdaki sol kolon için   </td>
+            <td>  satırdaki sağ kolon için   </td>
+            <td>3. kolon</td>
+            <td>4. kolon</td>
+            <td>5. kolon</td>
+        </tr>
+        <tr>
+            <td> satırdaki sol kolon için   </td>
+            <td>  satırdaki sağ kolon için   </td>
+            <td>3. kolon</td>
+            <td>4. kolon</td>
+            <td>5. kolon</td>
+        </tr>
+        <tr>
+            <td> satırdaki sol kolon için   </td>
+            <td>  satırdaki sağ kolon için   </td>
+            <td>3. kolon</td>
+            <td>4. kolon</td>
+            <td>5. kolon</td>
+        </tr>
+    </table>
+    <hr />
+    <h3>
+        tablolarda satır ve sütun birleştirme
+    </h3>
+    <table border="1">
+        <caption> caption ile tabloya başlık verebiliyoruz</caption>
+        <tr>
+        <th rowspan="3">
+            ürün bilgileri
+        </th>
+        </tr>
+        <tr>
+            <th> Ürün adı:</th>
+            <td> asus laptop   </td>
+        </tr>
+        <tr>
+            <th rowspan=2 > rowspan kodu ile kaç satırlık yükseklik lazımsa o değeri veriyoruz</th>
+            <td>
+                <img src="/Images/ikon.png" height="100" />
+            </td>
+        </tr>
+    </table >
+
+    <h3> colspan özelliği ile sütun kolon birleştirme</h3>
+    <table border="1">
+        <tr>
+            <th>ürün adı</th>
+            <td> klavye   </td>
+        </tr>
+        <tr>
+            <th colspan=2> burası colspan 2 koduyla 2 2 sütunluk yer kaplar</th>
+            <
+        </tr>
+    </table>
+    <hr />
+    <i>html i elementi ile italik yazılar yazabiliriz </i>
+    <em>em elementi ile yatıkm yazılar yazabiliriz</em>
+    <b>bold kalın yazı</b>
+    <strong>güçül yazı</strong>
+
+    <h2>html de <small>small</small> elementi ile bir yazıyı daha küçük gösterebiliriz</h2>
+    <mark>mark html öğesi işaretli veya vurgulanmış metni tanımlar</mark>
+    <ins>html ins tagı</ins>
+    <p> sub html öğesi ile <sub>alt</sub> çıkıntılı metin tanımlarız</p>
+    <p> sub html öğesi <sup>üst yazı </sup> mettni tanımlar</p>
+
+    <h3>html de liste elemanları kullanımı</h3>
+    <p>sıralı veya sırasız olmak üzere 2 farklı liste kullanabilirz</p>
+    <ul>
+        <li>unordered html list</li>
+        <li>sıırasız liste oluşturmak için</li>
+        <li>ul ve li kullanabiliriz</li>
+        <li>özellikle menülerde sık kullanılır</li>
+    </ul>
+    <ul>
+        <li> <a href="#"> anasayfa</a></li>
+        <li> <a href="#">ürüünler</a></li>
+        <li> <a href="#"> hakkımızda</a></li>
+        <li> <a href="#"> ilerttişim</a></li>
+    </ul>
+    <h3>sıralı listr</h3>
+    <ol>
+        <li> <a href="#"> anasayfa</a></li>
+        <li> <a href="#">ürüünler</a></li>
+        <li> <a href="#"> hakkımızda</a></li>
+        <li> <a href="#"> ilerttişim</a></li>
+    </ol>
+    <h4>bir diğer liste yöntemi ise dl yani description listidir açıklamalı listeler oluşturmada kullanılır </h4>
+    <dl>
+        <dt> asus laptop</dt>
+       <dd>oyun ve iş bilgisayarı</dd>
+        <dt>dark klavye</dt>
+        <dd>rgb oyuncu klavyesi</dd>
+    </dl>
+    <h3>fieldset elementi</h3>
+    <!--html kodları arasına açıklama yorum satırı eklemeye yarar-->
+    <fieldset>
+        <legend>
+            kullanıcı girişi
+        </legend>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        kullanıcı adı:
+                    </td>
+                    <td>
+                        <input id="Text1" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       şifre:
+                    </td>
+                    <td>
+                        <input id="Text1" type="text" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id="Submit1" type="submit" value="giriş" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    <h2>semantik html 5 elementleri</h2>
+    <header>
+        web sayfalarında üst bölümü bu kodlar içerisinde yazmamız önerilir
+        <nav>
+            nav elementi içerisinde genelde sayfada kullanılacak menü kodları (ul li) yer alır
+        </nav>
+    </header>
+</body>
+</html>
